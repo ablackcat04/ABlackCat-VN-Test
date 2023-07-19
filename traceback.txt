@@ -1,0 +1,45 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+OSError: Couldn't find file 'sample-sound.ogg'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\python.py", line 1049, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\display\core.py", line 4097, in interact_core
+    renpy.audio.audio.periodic()
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\audio\audio.py", line 1166, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
+    periodic_pass()
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
+    c.periodic()
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\audio\audio.py", line 517, in periodic
+    topf = load(filename)
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\audio\audio.py", line 70, in load
+    rv = renpy.loader.load(fn)
+  File "E:\RenPi\renpy-7.4.8-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'sample-sound.ogg'.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.0.1.22070801
+ABlackCat's VN Test 1.4.1
+Thu Jun 22 09:56:12 2023
