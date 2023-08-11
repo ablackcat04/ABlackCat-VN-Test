@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 600: u'show' is not a keyword argument or valid child for the vbox statement.
+    show Aiko:
+        ^
+
+Ren'Py Version: Ren'Py 7.4.8.1895
+Fri May 27 21:50:40 2022

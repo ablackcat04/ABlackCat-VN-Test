@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 45, in script
+    show FBIm movie
+Exception: Image 'FBIm' does not accept attributes 'movie'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 45, in script
+    show FBIm movie
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 496, in _duplicate
+    args.extraneous()
+  File "C:\Users\wuru8\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'FBIm' does not accept attributes 'movie'.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.1.1.23060707
+ABlackCat's VN Test 1.4.2
+Fri Aug 11 16:22:18 2023
